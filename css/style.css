@@ -6,8 +6,13 @@
 }
 
 /* Mix */
+body {
+  height: 100vh;
+}
+
 main {
-  height: calc(100vh - 70px);
+  height: calc(100% - 70px);
+  overflow: auto;
 }
 
 ul {
