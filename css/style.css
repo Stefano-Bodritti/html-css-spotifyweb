@@ -1,9 +1,11 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Mix */
 main {
   height: calc(100vh - 70px);
 }
@@ -12,6 +14,7 @@ ul {
   list-style: none;
 }
 
+/* barra laterale */
 aside {
   position: fixed;
   left: 0;
@@ -38,15 +41,16 @@ aside {
 
 .second_nav {
   height: calc(100% - 70px - 110px - 50px);
+  overflow: hidden;
   background-color: pink;
 }
 
 .playlist_title {
-  height: 25px;
+  height: 50px;
 }
 
 .second_nav ul {
-  height: calc(100% - 25px);
+  height: calc(100% - 50px);
   overflow-y: auto;
 }
 
@@ -54,7 +58,9 @@ aside {
   height: 50px;
   background-color: yellow;
 }
+/* fine barra laterale */
 
+/* barra top */
 .upgrade {
   position: fixed;
   top: 0;
@@ -67,14 +73,18 @@ aside {
   justify-content: flex-end;
   align-items: center;
 }
+/* barra top */
 
+/* contenuto principale */
 .main_content {
   margin-left: 200px;
   padding: 70px 10px 70px;
   background-color: blue;
   font-size: 40px;
 }
+/* fine contenuto principale */
 
+/* barra bottom */
 footer {
   position: fixed;
   bottom: 0;
@@ -87,3 +97,4 @@ footer {
   align-items: center;
   padding: 0 10px;
 }
+/* fine barra bottom */
