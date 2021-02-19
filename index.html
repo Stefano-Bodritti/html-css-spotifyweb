@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
@@ -21,9 +24,23 @@
         <!-- prima navbar -->
         <nav class="first_nav">
           <ul>
-            <li><a href="#"><img src="img/home.svg" alt="Home">Home</a></li>
-            <li><a href="#"><img src="img/search.svg" alt="Cerca">Cerca</a></li>
-            <li><a href="#"><img src="img/library.svg" alt="Libreria">La tua libreria</a></li>
+            <li>
+              <a href="#">
+                <img src="img/home.svg" alt="Home">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="img/search.svg" alt="Cerca">
+                <span>Cerca</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/libreria.svg" alt="Libreria">
+                <span>La tua libreria</span>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- fine prima navbar -->
@@ -58,12 +75,26 @@
 
       <!-- barra top upgrade -->
       <div class="upgrade">
-        <button>Effettua l'upgrade</button>
+        <a class="btn" href="#">Effettua l'upgrade</a>
       </div>
       <!-- fine barra top upgrade -->
 
       <!-- contenuto principale -->
       <div class="main_content">
+
+        <!-- link navigazione -->
+        <div class="links">
+          <ul>
+            <li><a href="#">In Evidenza</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Classifiche</a></li>
+            <li><a href="#">Generi e Mood</a></li>
+            <li><a href="#">Nuove uscite</a></li>
+            <li><a href="#">Scopri</a></li>
+          </ul>
+        </div>
+        <!-- fine link navigazione -->
+
         <!-- sezione recently -->
         <section id="recently">
           <h2>Title</h2>
