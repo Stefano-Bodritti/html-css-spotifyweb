@@ -18,7 +18,8 @@
       <!-- barra laterale -->
       <aside>
         <div class="logo">
-          <img src="img/logo.svg" alt="Logo Spotify">
+          <img class="xs_hidden" src="img/logo.svg" alt="Logo Spotify">
+          <img class="xs_display" src="img/logo-small.svg" alt="Logo Spotify">
         </div>
 
         <!-- prima navbar -->
@@ -47,11 +48,11 @@
 
         <!-- seconda navbar -->
         <nav class="second_nav">
-          <div class="playlist_title">
+          <div class="playlist_title xs_hidden">
             <h3>Playlist</h3>
             <a href="#"><i class="fas fa-plus"></i> Crea Playlist</a>
           </div>
-          <ul>
+          <ul class="xs_hidden">
             <li><a href="#">Nome Playlist</a></li>
             <li><a href="#">Nome Playlist</a></li>
             <li><a href="#">Nome Playlist</a></li>
@@ -64,9 +65,9 @@
         <!-- fine seconda navbar -->
 
         <div class="aside_bottom">
-          <a href="#"><i class="far fa-arrow-alt-circle-down"></i> Installa app</a>
-          <hr>
-          <h5>John Doe</h5>
+          <a href="#"><img src="img/download.svg" alt="Download"> <span class="xs_hidden">Installa app<span></a>
+          <hr class="xs_hidden">
+          <div class="name"><img src="img/profile.svg" alt="Profilo"><h5>John Doe</h5></div>
         </div>
       </aside>
       <!-- fine barra laterale -->
