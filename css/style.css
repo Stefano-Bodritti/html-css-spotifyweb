@@ -221,7 +221,7 @@ aside a {
 /* contenuto principale */
 .main_content {
   margin-left: 200px;
-  padding: 70px 15px 70px;
+  padding: 70px 15px 40px;
   background-color: #141922;
   /* font-size: 40px; */
 }
@@ -259,7 +259,7 @@ aside a {
 .main_content h2 {
   color: white;
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .container {
@@ -312,6 +312,17 @@ aside a {
   opacity: 1;
 }
 
+.box_img_circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.box_song_circle {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  overflow: hidden;
+}
+
 .overlay i {
   position: absolute;
   top: 50%;
@@ -319,6 +330,13 @@ aside a {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 60px;
+}
+
+section p {
+  color: #666666;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 10px 0 20px;
 }
 /* fine contenuto principale */
 
@@ -341,7 +359,7 @@ footer {
 @media screen and (max-width: 1100px) {
 
   .main_content {
-    padding: 70px 10px 70px;
+    padding: 70px 10px 40px;
   }
 
   .box_song {
