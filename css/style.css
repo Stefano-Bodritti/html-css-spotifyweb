@@ -317,12 +317,6 @@ aside a {
   overflow: hidden;
 }
 
-.box_song_circle {
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  overflow: hidden;
-}
-
 .overlay i {
   position: absolute;
   top: 50%;
@@ -353,6 +347,56 @@ footer {
   align-items: center;
   padding: 0 10px;
 }
+
+.footer_left, .footer_right {
+  width: 30%;
+}
+
+.footer_center {
+  width: 40%;
+}
+
+.box_play {
+  display: flex;
+  align-items: center;
+}
+
+.box_play img {
+  height: 40px;
+  padding-right: 10px;
+}
+
+.info_song {
+  /* width: 30%; */
+  margin-right: 8%;
+}
+
+.info_song h5 {
+  color: white;
+  font-size: 12px;
+}
+
+.info_song p {
+  color: #666666;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info_song p:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .icon_grey {
+  color: #666666;
+  padding-right: 10px;
+}
+
+footer .icon_grey:hover {
+  color: white;
+}
+
 /* fine barra bottom */
 
 /* media query */
