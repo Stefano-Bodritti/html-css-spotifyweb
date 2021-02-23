@@ -28,6 +28,15 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: 0;
+  padding: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
 /* barra laterale */
 aside {
   position: fixed;
@@ -219,7 +228,6 @@ aside a {
   margin-left: 200px;
   padding: 70px 15px 40px;
   background-color: #141922;
-  /* font-size: 40px; */
 }
 
 .links ul {
@@ -290,10 +298,10 @@ aside a {
 
 .box_img {
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
-  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -301,10 +309,13 @@ aside a {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
-  transition: opacity 0.5s;
+  transition: all 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
 }
 
 .box_song:hover .overlay {
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -405,7 +416,6 @@ footer .icon_grey:hover {
 .icon_white {
   color: white;
   background-color: transparent;
-  border: none;
   font-size: 12px;
   cursor: pointer;
   margin: 0 8px 0;
@@ -579,4 +589,16 @@ span.duration {
   .icon_big {
     font-size: 18px;
   }
+}
+
+@media screen and (max-height: 250px) {
+
+  .upgrade {
+    display: none;
+  }
+
+  .main_content {
+    padding-top: 20px;
+  }
+
 }
